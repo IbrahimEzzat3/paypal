@@ -1,0 +1,186 @@
+{
+  "embeds": {
+    "main": {
+      "footer": "Invoice Bot",
+      "timestamp": false
+    },
+    "error": {
+      "title": "ERROR",
+      "timestamp": false
+    }
+  },
+  "generic": {
+    "noPermission": "No Permission!"
+  },
+  "invoice": {
+    "create": {
+      "title": "",
+      "description": "**Invoice Created**",
+      "fields": [{
+        "name": "Number",
+        "value": "%invNumber%",
+        "inline": true
+      }, {
+        "name": "Invoice Status",
+        "value": "%invStatus%",
+        "inline": true
+      }, {
+        "name": "\u200b",
+        "value": "\u200b",
+        "inline": true
+      }, {
+        "name": "Email",
+        "value": "%email%",
+        "inline": true
+        }, {
+          "name": "Amount Due",
+          "value": "%amountDue%",
+        "inline": true
+        }, {
+          "name": "\u200b",
+          "value": "\u200b",
+          "inline": true
+        }, {
+          "name": "Pay Now",
+          "value": "[Click Me!](%paymentLink%)"
+      }],
+      "footer": "%invId%"
+    },
+    "view": {
+      "title": "",
+      "description": "**Invoice Details**",
+      "fields": [{
+        "name": "Number",
+        "value": "%invNumber%",
+        "inline": true
+      }, {
+        "name": "Invoice Status",
+        "value": "%invStatus%",
+        "inline": true
+      }, {
+        "name": "\u200b",
+        "value": "\u200b",
+        "inline": true
+      }, {
+        "name": "Email",
+        "value": "%email%",
+        "inline": true
+      }, {
+        "name": "Amount Due",
+        "value": "%amountDue%",
+        "inline": true
+      }, {
+        "name": "\u200b",
+        "value": "\u200b",
+        "inline": true
+      }, {
+        "name": "Link",
+        "value": "[Click Me!](%paymentLink%)"
+      }],
+      "footer": "%invId%"
+    },
+    "cancel": {
+      "title": "",
+      "description": "**Invoice Cancelled**",
+      "fields": [{
+        "name": "Number",
+        "value": "%invNumber%",
+        "inline": true
+      }, {
+        "name": "Invoice Status",
+        "value": "CANCELLED",
+        "inline": true
+      }, {
+        "name": "\u200b",
+        "value": "\u200b",
+        "inline": true
+      }, {
+        "name": "Email",
+        "value": "%email%",
+        "inline": true
+      }, {
+        "name": "Original Amount",
+        "value": "%total% %currencyCode%",
+        "inline": true
+      }, {
+        "name": "\u200b",
+        "value": "\u200b",
+        "inline": true
+      }, {
+        "name": "Cancellation Reason",
+        "value": "%cancelReason%"
+      }],
+      "footer": "%invId%"
+    },
+    "searching": {
+      "title": "**Search**"
+    },
+    "search": {
+      "title": "",
+      "description": "**Search**",
+      "spacing": "\n"
+    }
+  },
+  "invoiceCheck": {
+    "unpaid": {
+      "title": "",
+      "description": "You still owe $**%amountDue%** of **%total%**",
+      "fields": [],
+      "footer": ""
+    },
+    "paid": {
+      "title": "",
+      "description": "**Invoice Paid**",
+      "fields": [{
+        "name": "Number",
+        "value": "%invNumber%",
+        "inline": true
+      },{
+        "name": "Amount Paid",
+        "value": "%total%",
+        "inline": true
+      }, {
+        "name": "\u200b",
+        "value": "\u200b",
+        "inline": true
+      },{
+        "name": "Invoice",
+        "value": "[Click Me!](%paymentLink%)"
+      }],
+      "footer": "%invId%"
+    },
+    "partialPayment": {
+      "title": "",
+      "description": "**Partially Paid**",
+      "fields": [{
+        "name": "Number",
+        "value": "%invNumber%",
+        "inline": true
+      }, {
+        "name": "Email",
+        "value": "%email%",
+        "inline": true
+      }, {
+        "name": "\u200b",
+        "value": "\u200b",
+        "inline": true
+      }, {
+        "name": "Amount Due",
+        "value": "%amountDue%",
+        "inline": true
+      }, {
+        "name": "Total",
+        "value": "%total%",
+        "inline": true
+      }, {
+        "name": "\u200b",
+        "value": "\u200b",
+        "inline": true
+      }, {
+        "name": "Pay Now",
+        "value": "[Click Me!](%paymentLink%)"
+      }],
+      "footer": "%invId%"
+    }
+  }
+}

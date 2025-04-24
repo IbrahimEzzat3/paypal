@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ReadMe</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:700,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .Header {
+        color: #383838;
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      .Header:not(.Top) {
+        padding-top: 25px;
+      }
+
+      .Header:not(.Top):after {
+        content: "";
+        border: 0.5px solid #c4c4c4;
+        transform: translateY(400%);
+        display: block;
+      }
+
+      .Top {
+        padding-top: 50px;
+      }
+
+      .header {
+        width: 100%;
+        padding-top: 50px;
+        text-align: center;
+      }
+
+      .header {
+        padding-bottom: 30px;
+      }
+
+      .content {
+        padding: 30px;
+      }
+
+      code,
+      p,
+      li {
+        font-size: 15px;
+      }
+
+      .subHeader {
+        font-size: 18px;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+    <script>
+      window.location = "https://docs.bluedev.xyz";
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <div class="header">
+        <h1 class="Header Top">
+          Thank you for buying my bot. Below you will find instructions and
+          resources to help get you started.
+        </h1>
+        <span style="color: #c90707; font-weight: bold"
+          >For more up to date information
+          <a
+            style="color: #c90707; font-weight: bold"
+            href="https://docs.bluedev.xyz/"
+            >Click Me!</a
+          ></span
+        >
+      </div>
+      <div class="content">
+        <h1 class="Header">Installation</h1>
+        <h2 style="font-weight: bold; font-size: 16px">
+          (You should already have node.js installed and working)
+        </h2>
+        <p>Alternatively, you may contact Blue#4501 for panel based hosting.</p>
+        <ol>
+          <li>
+            Install a process manager such as
+            <a target="_blank" href="http://pm2.keymetrics.io/">pm2</a>. This is
+            used to run the bot 24/7.
+          </li>
+          <li>
+            Navigate to wherever you unpacked the bot and proceed to the next
+            step.
+          </li>
+          <li>
+            While in the bot's root directory, execute <code>npm i</code>. This
+            will install the dependencies needed for the bot to run.
+            <p>
+              The following steps are for pm2. If you are using another manager,
+              follow their docs.<br />If you don't already have a bot account,
+              refer to the "<a href="#creating-account"
+                >Creating a bot account</a
+              >" section
+            </p>
+          </li>
+          <li>
+            To make the bot run 24/7 run
+            <code>pm2 start bot.js --name Whatever Name</code>
+          </li>
+          <li>
+            Next run <code>pm2 startup</code> to ensure that the bot will start
+            upon machine reboot.
+          </li>
+        </ol>
+
+        <h2 id="creating-account" class="subHeader">Creating a bot account</h2>
+        <p>
+          If you already have a a bot account and token, you may skip to step x
+        </p>
+        <ol>
+          <li>
+            While logged in, head to the
+            <a
+              target="_blank"
+              href="https://discordapp.com/developers/applications/"
+              >Discord Developer Portal</a
+            >.
+          </li>
+          <li>
+            Click the "New Application" button and name it whatever you want.
+          </li>
+          <li>
+            Click the "Bot" button from the sidebar, and click the "Add Bot"
+            button afterwards.
+          </li>
+          <li>
+            Now that you have created a bot, you may change it's username and
+            icon. Click the "Click to Reveal Token" button or the "Copy" button
+            to get your bot's token.
+          </li>
+          <li>
+            Lastly, navigate to the bot's config file and add the token you just
+            got. For example: <code>"token": "Your Bot Token"</code>
+          </li>
+        </ol>
+
+        <h1 class="Header">Configuration</h1>
+        <p>
+          All config files use JSON. You can find the config for the bot by
+          going to <code>(The Bot's Root Folder)\config\conf.json</code>. If you
+          need help understanding JSON, please refer to the "<a
+            href="#useful-sites"
+            >Useful Sites</a
+          >" section below.
+        </p>
+        <h2 class="subHeader">Bot Activity</h2>
+        <p>
+          The bot's activity can be changed in conf.json. Avaliable types
+          include: <code>PLAYING, STREAMING, LISTENING, WATCHING</code>
+        </p>
+
+        <h1 class="Header">Bugs</h1>
+        <h2 class="subHeader">Reporting a bug</h2>
+        <p>
+          If you encounter any bugs while using the bot, please contact
+          Blue#4501 for assistance.
+        </p>
+        <span style="color: #c90707; font-weight: bold"
+          >Please note that support for modified code is limited!</span
+        >
+        <h1 class="Header" id="useful-sites">Useful Sites</h1>
+        <p>
+          Below are some useful sites that may help you configure and use the
+          bot
+        </p>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="http://pm2.keymetrics.io/docs/usage/quick-start/"
+              >PM2 Quick Start Guide</a
+            >
+            | If you decide to use pm2, these are the docs for getting started
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.w3schools.com/js/js_json_intro.asp"
+              >JSON - Introduction</a
+            >
+            | This site is useful if you don't already know how to use Json.
+          </li>
+          <li>
+            <a target="_blank" href="https://jsonformatter.org/json-parser"
+              >JSON Parser</a
+            >
+            | Use this to make sure you haven't made any mistakes in the
+            config(s).
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool"
+              >Color picker tool</a
+            >
+            | Use this to get the hex codes for embeds.
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://support.discordapp.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-"
+              >Where can I find my User/Server/Message ID?</a
+            >
+            | This article will help you get a guild/channel/message ID if you
+            need it.
+          </li>
+        </ul>
+      </div>
+      <p class="footer">
+        <a href="https://discord.gg/J9ZEhMu">Discord Server</a>
+      </p>
+    </noscript>
+  </body>
+</html>

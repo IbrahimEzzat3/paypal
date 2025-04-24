@@ -1,0 +1,36 @@
+{
+  "prefix": "!",
+  "activity": {
+    "message": "payments",
+    "type": "WATCHING"
+  },
+  "embeds": {
+    "success": {
+      "embedColor": "A8E593"
+    },
+    "main": {
+      "embedColor": "31F8F8"
+    },
+    "error": {
+      "embedColor": "E33B17"
+    }
+  },
+  "invoices": {
+    "_comment": "The time between when a user can react to check if an invoice has been paid, in seconds",
+    "checkTimeLimit": 0
+  },
+  "commands": {
+    "delete": true,
+    "invoice": {
+      "aliases": [
+        "pay"
+      ]
+    }
+  },
+  "permissions": {
+    "_comment": "The role (id or name) one needs to have in order to run commands",
+    "staff": [
+      "Ticket Moderators","STAFF","Support Team"
+    ]
+  }
+}

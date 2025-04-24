@@ -1,0 +1,22 @@
+{
+  "live": true,
+  "api": {
+  },
+  "requireEmail": false,
+  "merchantInfo": {
+    "businessName": "Evo Graph",
+    "emailAddress": "mohamedsaper9090@gmail.com",
+    "website": "",
+    "logoUrl": "https://res.cloudinary.com/dxfyhkj2l/image/upload/fl_preserve_transparency/v1739545365/Screenshot_2025-02-12_143112_lahkok.png?_s=public-apps",
+    "additionalNotes": ""
+  },
+  "invoiceDetails": {
+    "currencyCode": "USD",
+    "note": "Do not pay if you don't receive the digital goods. You can't request a refund (digital goods)",
+    "termsAndConditions": ""
+  },
+  "minimumAmount": {
+    "enabled": false,
+    "percent": 0.5
+  }
+}
