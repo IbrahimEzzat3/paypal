@@ -18,7 +18,7 @@ console.log(o.yellow("Starting bot...")),
       );
     }
     const i = require(process.cwd() + "/config/conf.json");
-    if (!"MTI1NTE3NjgwNjk0NDk5NzQ2OA.G9koz5.vzQ84oQ7twvJ2Ml9ylPGNYUhiGqs0DCCCoZTbM")
+    if (!process.env.TOKEN)
       return t(
         `   ${process.env.TOKEN}
 Missing bot token! Remember to change the token in the config.`
@@ -50,7 +50,7 @@ Missing bot token! Remember to change the token in the config.`
             });
       }),
       l
-        .login("MTI1NTE3NjgwNjk0NDk5NzQ2OA.G9koz5.vzQ84oQ7twvJ2Ml9ylPGNYUhiGqs0DCCCoZTbM")
+        .login(process.env.TOKEN)
         .catch(() =>
           t(
             "Please make sure you have the correct token set in the config file."
